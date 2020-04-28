@@ -51,7 +51,7 @@
     </div>
     <div class="container">
     <div class="services__iner">
-      <a class="services__item" href="#">
+      <a class="services__item" href="price.html">
         <img class="services__img" src="images/slider-1.jpg" alt="img-1">
         <h3 class="services__title">
           Антигравийная защита
@@ -62,7 +62,7 @@
         <p class="services__link">Подробнее</p>
       </a>
 
-      <a class="services__item" href="#">
+      <a class="services__item" href="price.html">
         <img class="services__img" src="images/slider-4.jpg" alt="img-2">
         <h3 class="services__title">
           Полировка / Химчистка
@@ -73,7 +73,7 @@
         <p class="services__link">Подробнее</p>
       </a>
 
-      <a class="services__item" href="#">
+      <a class="services__item" href="price.html">
         <img class="services__img" src="images/slider-6.jpg" alt="img-3">
         <h3 class="services__title">
           Защитные покрытия
@@ -84,7 +84,7 @@
         <p class="services__link">Подробнее</p>
       </a>
 
-      <a class="services__item" href="#">
+      <a class="services__item" href="price.html">
         <img class="services__img" src="images/slider-8.jpg" alt="img-4">
         <h3 class="services__title">
           Предпродажная подготовка авто
@@ -95,7 +95,7 @@
         <p class="services__link" >Подробнее</p>
       </a>
 
-      <a class="services__item"  href="#">
+      <a class="services__item"  href="price.html">
         <img class="services__img" src="images/slider-7.jpg" alt="img-5">
         <h3 class="services__title">
           Брендирование транспорта
@@ -106,7 +106,7 @@
         <p class="services__link">Подробнее</p>
       </a>
 
-      <a class="services__item" href="#">
+      <a class="services__item" href="price.html">
         <img class="services__img" src="images/slider-9.jpg" alt="img-6">
         <h3 class="services__title">
           Реставрация кожи, винила
@@ -127,7 +127,7 @@
       <div class="note__title">
         <h3>ПРЕДВАРИТЕЛЬНАЯ ЗАПИСЬ</h3>
       </div>
-      <a class="note__btn">
+      <a class="note__btn" id="note-btn">
         Записаться
       </a>
     </div>
@@ -242,6 +242,24 @@
           © 2020 «Fresh Auto»
         </div>
 </footer>
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Предварительная запись</h3>
+        <button class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="send.php" method="post">
+          <input class="modal-body__item " type="text" name="fio" placeholder="Ф.И.О" required>
+          <input class="modal-body__item " type="text" name="
+          car" placeholder="Марка автомобиля" required>
+          <input class="modal-body__item " type="tel" name="phone" placeholder="Номер телефона" required>
+          <input  class="note__btn-modal" type="submit" value="Записаться">
+        </form>
+      </div>
+    </div> 
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
